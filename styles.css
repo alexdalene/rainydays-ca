@@ -147,21 +147,16 @@ body {
     background-position: center;
 }
 
-footer {
-    margin-top: 20rem;
-}
-
 .footer {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
     background-color: var(--m-background-color);
-    width: 99vw;
-    height: 40rem;
+    width: auto;
+    height: 35rem;
     background-image: url(icons/footer.svg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    margin-top: 10rem;
 }
 
 .footer div {
@@ -170,7 +165,6 @@ footer {
     align-items: center;
     width: 20rem;
     height: 20rem;
-    margin-bottom: 1.5rem;
 }
 
 .footer div img {
