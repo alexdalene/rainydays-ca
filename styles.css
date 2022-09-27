@@ -18,6 +18,7 @@
 }
 body {
     margin: 0;
+    padding: 0;
 }
 
 .m-navbar {
@@ -59,7 +60,7 @@ body {
 
 .cover-image {
     background: var(--m-accent-color-three);
-    width: 100vw;
+    width: 99vw;
     height: 20rem;
     background-image: url(https://s3-alpha-sig.figma.com/img/1403/2fed/1eac1a196100639dc8fea8dc8e9810d6?Expires=1665360000&Signature=gFJ0jk241WrImtz69XR8Df6S~s8QH1zySrCo64~0MKSZbroseITcG4JGSLHDfaFxJt9uQmxHTqWDcb~m-NRN0qQTBbiQu9Tp7akUc3k0BeCdslXjLAm7DPETeRk~VvwPl4En6lKluM9qMk-gxpcfYU2G8yHalDwvVmc9RDJpoTx56HKfjQMLSCCL1EzA2qPo~WuqMC25yQrUqyZgmJPElwCiiT8icRESOGmjdBX5ZPEkkjL6PLaeocqagdxizE3XSfiOUOUeXkmUOkkZsKK9u7q9VH6HZiYlevf-yfgmb2a7H~eBDRjnTeKSs5AH7NcO6i-8TF74WJlJgZUrLhBErQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
     background-position-x: center;
@@ -155,8 +156,8 @@ footer {
     justify-content: space-evenly;
     align-items: flex-end;
     background-color: var(--m-background-color);
-    width: 100vw;
-    height: 30rem;
+    width: 99vw;
+    height: 40rem;
     background-image: url(icons/footer.svg);
     background-size: cover;
     background-repeat: no-repeat;
