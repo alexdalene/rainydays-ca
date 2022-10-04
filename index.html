@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,64 +17,56 @@
     <link rel="stylesheet" href="styles.css" />
     <title>RAINYDAYS</title>
   </head>
-  <body>
-    <nav>
-      <div class="m-navbar">
-        <ul>
-          <li>
-            <span id="home-icon"
-              ><img src="icons/Rainydays-mountain.svg" alt=""
-            /></span>
-          </li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">CONTACT</a></li>
-          <li>
-            <span class="material-symbols-outlined">search</span>
-          </li>
-          <li>
-            <span class="material-symbols-outlined">shopping_bag</span>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
-    <header>
-      <div class="cover-image"></div>
+  <body>
+    <header class="navbar">
+      <ul>
+        <li>
+          <a href=""
+            ><img
+              class="navbar-logo"
+              src="/icons/Rainydays-mountain.svg"
+              alt=""
+          /></a>
+        </li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li>
+          <a href=""><span class="material-symbols-outlined">search</span></a>
+        </li>
+        <li>
+          <a href=""
+            ><span class="material-symbols-outlined">shopping_bag</span></a
+          >
+        </li>
+      </ul>
     </header>
 
-    <section class="container">
-      <nav>
-        <ul>
-          <li><a href="">JACKETS</a></li>
-          <li><a href="">PANTS</a></li>
-          <li><a href="">SHOES</a></li>
-          <li><a href="">ACCESSORIES</a></li>
-        </ul>
-      </nav>
+    <section class="cover-img-container">
+      <img id="logo-simple" src="/icons/Rainydays-simplistic.svg" alt="" />
     </section>
 
-    <main>
-      <section class="container">
-        <div class="div-container">
-          <h2 class="header">What's your thing?</h2>
-          <div class="sport-container">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+    <main class="main-container">
+      <nav class="buttons-container">
+        <button>JACKETS</button>
+        <button>PANTS</button>
+        <button>SHOES</button>
+        <button>ACCESSORIES</button>
+      </nav>
+
+      <section>
+        <h1 id="images-header">What's your thing?</h1>
+        <div class="images-container">
+          <div class="images-style"><h2>Running</h2></div>
+          <div class="images-style"><h2>Skiing</h2></div>
+          <div class="images-style"><h2>Hiking</h2></div>
+          <div class="images-style"><h2>Camping</h2></div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div class="footer">
-        <div>1</div>
-        <div>
-          <img src="icons/Rainydays.svg" alt="" />
-        </div>
-        <div>3</div>
-      </div>
+    <footer class="footer-container">
+      <img id="footer-image" src="/icons/footer.svg" alt="" />
     </footer>
   </body>
 </html>
