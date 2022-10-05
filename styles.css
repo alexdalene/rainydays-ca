@@ -49,6 +49,7 @@ table {
 
 :root {
     font-family: 'Poppins', sans-serif;;
+    font-size: 16px;
 }
 
 .navbar {
@@ -63,15 +64,21 @@ table {
     z-index: 100;
 }
 
-.navbar ul {
+.full-navbar {
     display: flex;
     width: 20%;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
+.com-navbar {
+    visibility: hidden;
+    display: none;
+}
+
 .navbar li {
-    margin: 0 10px;
+    margin: 0 1rem;
+    transition: 150ms ease-in-out;
 }
 
 .navbar a {
@@ -80,9 +87,22 @@ table {
     font-size: 16px;
 }
 
+.navbar li:hover {
+    transform: scale(1.05);
+}
+
+.navbar a:hover {
+    color: black;
+}
+
 .navbar-logo {
     width: 44px;
     height: 44px;
+    fill: white;
+}
+
+.navbar-logo:hover {
+    fill: black;
 }
 
 .material-symbols-outlined {
@@ -96,7 +116,8 @@ table {
 .cover-img-container {
     background-image: url(/images/cover-image.jpg);
     min-height: 300px;
-    background-position: 50% 40%;
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,29 +128,48 @@ table {
 }
 
 .main-container {
-    margin: 5em;
+    margin: 5rem 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .buttons-container {
     display: flex;
-    justify-content: space-around;
-    margin: 3em 0;
+    justify-content: center;
+    margin: 3rem 0;
 }
 
 .buttons-container button {
     color: white;
     background-color: #071013;
     border: none;
-    width: 13em;
-    height: 3em;
-    font-size: 1.2em;
+    width: 13rem;
+    height: 3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     transition: 300ms ease-in-out;
+    margin: 0 1rem;
+    margin-bottom: 5rem;
+}
+
+.buttons-container buton:first-child {
+    margin-left: 0;
+}
+
+.buttons-container buton:last-child {
+    margin-right: 0;
 }
 
 .buttons-container button:hover {
     transform: translateY(-3px);
     box-shadow: 0px 3px #EB5160;
+}
+
+.images-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .images-container {
@@ -139,8 +179,8 @@ table {
 
 .images-style {
     background-color: #071013;
-    margin: 0 1em;
-    width: 25%;
+    margin: 0 1rem;
+    width: 300px;
     height: 350px;
     color: white;
     display: flex;
@@ -157,10 +197,10 @@ table {
 }
 
 .images-style h2 {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 800;
     background-color: #071013;
-    border: 1em solid #071013;
+    border: 10px solid #071013;
     box-shadow: 8px 8px #EB5160;
 }
 
@@ -173,21 +213,22 @@ table {
 }
 
 #images-header {
-    margin-bottom: 1em;
-    font-size: 1.2em;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    align-self: flex-start;
 }
 
 .images-style:nth-child(1) {
     background-image: url(/images/sport-running-img.jpg);
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: center;
 }
 
 .images-style:nth-child(2) {
     background-image: url(/images/sport-skiing-img.jpg);
     background-size: cover;
-    background-position: 50% 100%;
+    background-position: 0% 90%;
 }
 
 .images-style:nth-child(3) {
@@ -203,9 +244,37 @@ table {
 }
 
 .footer-container {
+    display: flex;
     width: 100%;
-    height: 15em;
-    margin-top: 20em;
+    height: 20rem;
+    margin-top: 500px;
+    z-index: 1;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-container-info {
+    display: flex;
+    height: 15rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    margin: 0 1rem;
+}
+
+.footer-info-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
 }
 
 #footer-image {
@@ -214,7 +283,25 @@ table {
     bottom: bottom;
 }
 
-@media screen and (max-width: 1300px) {
+#footer-mountains {
+    visibility: hidden;
+    display: none;
+}
+
+.footer-info li {
+    margin-top: 0.5rem;
+}
+
+.footer-info a {
+    color: white;
+}
+
+#footer-logo {
+    box-sizing: content-box;
+    width: 200px;
+}
+
+@media screen and (max-width: 1440px) {
     .images-container {
         flex-direction: column;
         justify-content: center;
@@ -222,16 +309,55 @@ table {
     }
 
     .images-style {
-        margin: 1em 0;
+        margin: 1rem 0;
     }
 
     #images-header {
-        text-align: center;
+        align-self: center;
+        margin-top: 2.5rem;
+        margin-bottom: 0;
     }
 
     .buttons-container {
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
 
+    .buttons-container button {
+        margin: 0;
+    }
+
+    .full-navbar {
+        visibility: hidden;
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .com-navbar {
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .com-navbar-icons {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    #footer-image {
+        visibility: hidden;
+        display: none;
+    }
+    
+    .footer-container {
+        background-color: #071013;
+    }
 }
