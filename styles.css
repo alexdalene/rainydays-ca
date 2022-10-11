@@ -87,10 +87,6 @@ table {
     font-size: 16px;
 }
 
-.navbar li:hover {
-    transform: scale(1.05);
-}
-
 .navbar a:hover {
     color: black;
 }
