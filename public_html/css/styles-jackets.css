@@ -109,19 +109,121 @@ table {
     'opsz' 16
   }
 
-  .cover-img-container {
+.main-container {
     background-image: url(/public_html/images/cover-image.jpg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container-background {
+    background-color: white;
+    width: 80%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5rem 0;
 }
 
-.cover-img-background {
-    background-color: white;
+.jackets-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
     width: 80%;
-    height: 100vh;
+    max-width: 1100px;
+}
+
+.jackets-container-item {
+    display: flex;
+    background-color: #EDEDED;
+    width: 250px;
+    height: 350px;
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #071013;
+}
+
+.footer-container-info {
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    margin: 0 1rem;
+}
+
+.footer-info-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.footer-info li {
+    margin-top: 0.5rem;
+}
+
+.footer-info a {
+    color: white;
+}
+
+#footer-logo {
+    box-sizing: content-box;
+    width: 200px;
+}
+
+@media screen and (max-width: 1670px) {
+    .jackets-container {
+        max-width: 740px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+
+    .full-navbar {
+        visibility: hidden;
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .com-navbar {
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .com-navbar-icons {
+        display: flex;
+    }
+
+    .footer-container {
+        background-color: #071013;
+    }
 }
