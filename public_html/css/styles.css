@@ -154,11 +154,11 @@ table {
     text-decoration: none;
 }
 
-.buttons-container buton:first-child {
+.buttons-container button:first-child {
     margin-left: 0;
 }
 
-.buttons-container buton:last-child {
+.buttons-container button:last-child {
     margin-right: 0;
 }
 
