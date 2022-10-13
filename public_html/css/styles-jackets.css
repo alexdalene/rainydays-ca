@@ -131,11 +131,28 @@ table {
     padding: 5rem 0;
 }
 
+.category-button {
+    display: flex;
+    gap: 18px;
+    margin: 1.5rem 0;
+    justify-content: flex-start
+    align-self: flex-start;
+    width: 80%;
+}
+
+.category-button-style {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 1rem;
+}
+
 .jackets-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 18px;
+    gap: 24px;
     flex-wrap: wrap;
     width: 80%;
     max-width: 1300px;
@@ -143,8 +160,8 @@ table {
 
 .jackets-container-item {
     background-color: #EDEDED;
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +172,7 @@ table {
 .jackets-container-item:hover {
     box-sizing: content-box;
     background-color: white;
-    box-shadow: 0px 0px 8px #ededed;
+    box-shadow: 0px 0px 8px #b9b9b9;
 }
 
 .jackets-container-item img {
@@ -209,7 +226,7 @@ hr {
 
 .footer-container-info {
     display: flex;
-    height: 350px;
+    height: 300px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
