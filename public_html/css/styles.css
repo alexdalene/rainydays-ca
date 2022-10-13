@@ -110,7 +110,7 @@ table {
 }
 
 .cover-img-container {
-    background-image: url(/public_html/images/cover-image.jpg);
+    background-image: url(../images/cover-image.jpg);
     min-height: 300px;
     background-attachment: fixed;
     background-size: cover;
@@ -221,25 +221,25 @@ table {
 }
 
 .images-style:nth-child(1) {
-    background-image: url(/public_html/images/sport-running-img.jpg);
+    background-image: url(../images/sport-running-img.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .images-style:nth-child(2) {
-    background-image: url(/public_html/images/sport-skiing-img.jpg);
+    background-image: url(../images/sport-skiing-img.jpg);
     background-size: cover;
     background-position: 0% 90%;
 }
 
 .images-style:nth-child(3) {
-    background-image: url(/public_html/images/sport-hiking-img.jpg);
+    background-image: url(../images/sport-hiking-img.jpg);
     background-size: cover;
     background-position: 80% 0%;
 }
 
 .images-style:nth-child(4) {
-    background-image: url(/public_html/images/sport-camping-img.jpg);
+    background-image: url(../images/sport-camping-img.jpg);
     background-size: cover;
     background-position: 50% 100%;
 }
