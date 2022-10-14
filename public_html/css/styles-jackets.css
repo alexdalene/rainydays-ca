@@ -156,16 +156,17 @@ table {
     justify-content: flex-start;
     width: 80%;
     font-weight: 500;
+    color: black;
 }
 
 .jackets-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 50px;
     flex-wrap: wrap;
     width: 80%;
-    /* max-width: 1300px; */
+    max-width: 70%;
 }
 
 .jackets-container-item {
@@ -270,13 +271,7 @@ hr {
     width: 200px;
 }
 
-@media screen and (max-width: 1860px) {
-    .jackets-container {
-        max-width: 740px;
-    }
-}
-
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 840px) {
 
     .full-navbar {
         visibility: hidden;
