@@ -165,7 +165,7 @@ table {
     gap: 24px;
     flex-wrap: wrap;
     width: 80%;
-    max-width: 1300px;
+    /* max-width: 1300px; */
 }
 
 .jackets-container-item {
