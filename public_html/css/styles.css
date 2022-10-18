@@ -84,6 +84,7 @@ table {
     text-decoration: none;
     color: white;
     font-size: 16px;
+    transition: 150ms ease-in-out;
 }
 
 .navbar a:hover {
@@ -144,7 +145,7 @@ table {
     height: 3rem;
     font-size: 1.2rem;
     font-weight: 600;
-    transition: 300ms ease-in-out;
+    transition: 150ms ease-in-out;
     margin-bottom: 5rem;
 }
 
@@ -187,7 +188,7 @@ table {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: 300ms ease-in-out;
+    transition: 150ms ease-in-out;
     min-width: 250px;
 }
 

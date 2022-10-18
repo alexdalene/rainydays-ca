@@ -84,6 +84,7 @@ table {
     text-decoration: none;
     color: white;
     font-size: 16px;
+    transition: 150ms ease-in-out;
 }
 
 .navbar a:hover {
@@ -176,13 +177,13 @@ table {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: 300ms ease-in-out;
+    transition: 150ms ease-in-out;
 }
 
 .jackets-container-item:hover {
     box-sizing: content-box;
     background-color: white;
-    box-shadow: 0px 0px 8px #b9b9b9;
+    box-shadow: 0px 0px 4px #c7c7c7;
 }
 
 .jackets-container-item img {
@@ -214,7 +215,7 @@ hr {
     height: 3rem;
     font-size: 1.2rem;
     font-weight: 600;
-    transition: 300ms ease-in-out;
+    transition: 150ms ease-in-out;
     margin-bottom: 5rem;
 }
 
