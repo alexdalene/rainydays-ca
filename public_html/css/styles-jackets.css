@@ -110,7 +110,7 @@ table {
   }
 
 .main-container {
-    background-image: url(/public_html/images/cover-image.jpg);
+    background-image: url(../images/cover-image.jpg);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
