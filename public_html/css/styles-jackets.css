@@ -55,7 +55,6 @@ table {
 .navbar {
     background-color: #EB5160;
     height: 44px;
-    position: -webkit-sticky;
     position: sticky;
     top: 0px;
     display: flex;
