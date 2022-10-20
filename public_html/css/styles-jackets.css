@@ -163,7 +163,7 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 18px;
     flex-wrap: wrap;
     width: 80%;
     max-width: 80%;
@@ -186,9 +186,17 @@ table {
     box-shadow: 0px 0px 4px #c7c7c7;
 }
 
-.jackets-container-item img {
+.jackets-img {
     width: auto;
     height: 80%;
+}
+
+#jackets-img {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .jackets-info {
@@ -198,6 +206,151 @@ table {
 
 .jackets-title {
     font-weight: 500;
+}
+
+.overlay {
+    display: none;
+}
+
+.overlay:target {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay figcaption {
+    width: 30rem;
+    height: 40rem;
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.overlay .close {
+    position: relative;
+    display: block;
+  }
+
+  .overlay .close::after {
+    right: -1rem;
+    top: -1rem;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    content: "×";
+    cursor: pointer;
+  }
+
+  .overlay .close::before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
+    cursor: default;
+  }
+
+  .jackets-overlay-item {
+    background-color: white;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.jackets-info-color {
+    display: flex;
+    justify-content: center;
+}
+
+.jackets-overlay-info {
+    line-height: 1.5;
+    margin-top: 0.5rem;
+}
+
+.jackets-overlay-size {
+    background-color: white;
+    width: 100%;
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1px solid #c7c7c7;
+    row-gap: 50px;
+}
+
+.jackets-overlay-button {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 0.8rem;
+        font-size: 16px;
+        font-weight: 700;
+        transition: 150ms ease-in-out;
+}
+
+.jackets-overlay-button:hover{
+    background-color: #EB5160;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    align-self: flex-start;
+}
+
+.top-sizes {
+    display: flex;
+    gap: 12px;
+}
+
+.bot-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+#cart-button {
+    color: white;
+    background-color: #071013;
+    border: none;
+    width: 13rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 150ms ease-in-out;
+}
+
+#cart-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 3px #EB5160;
 }
 
 hr {
