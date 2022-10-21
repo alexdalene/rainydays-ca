@@ -134,11 +134,10 @@ table {
 .category-button {
     display: flex;
     gap: 18px;
-    margin-top: 1.5rem;
-    margin-bottom: 5rem;
+    margin: 1.5rem 0 1.5rem 6rem;
     justify-content: flex-start;
     align-self: center;
-    width: 80%;
+    width: 100%;
 }
 
 .category-button-style {
@@ -147,14 +146,16 @@ table {
     justify-content: center;
     align-items: center;
     padding: 0.2rem 1rem;
-    font-size: 16px;
+    font-size: 14px;
+    border: 1px solid black;
 }
 
 #back-text {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 80%;
+    width: 100%;
+    margin-left: 6rem;
     font-weight: 500;
     color: black;
 }
@@ -165,14 +166,13 @@ table {
     align-items: center;
     gap: 18px;
     flex-wrap: wrap;
-    width: 80%;
-    max-width: 80%;
+    width: 100%;
 }
 
 .jackets-container-item {
     background-color: #EDEDED;
-    width: 250px;
-    height: 350px;
+    width: 300px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -355,7 +355,7 @@ table {
 
 hr {
     border: none;
-    border-top: 3px solid #EDEDED;
+    border-top: 1px solid black;
     width: 60%;
     margin: 1.5rem 0;
 }
