@@ -368,6 +368,10 @@ table {
 
 @media screen and (max-width: 840px) {
 
+    .container-main {
+        margin: 0;
+    }
+
     .full-navbar {
         visibility: hidden;
         display: none;
@@ -399,5 +403,17 @@ table {
 
     .top-nav h2 {
         min-width: 150px;
+    }
+
+    .container-info {
+        min-width: 398px;
+    }
+
+    .container-item {
+        min-width: 380px;
+    }
+
+    #size {
+        margin-right: 1rem;
     }
 }
