@@ -506,10 +506,12 @@ hr {
     .overlay figcaption {
         min-width: 330px;
         max-width: 330px;
+        height: 30rem;
+        gap: 10px;
     }
 
     .overlay .close::after {
         right: -24.5rem;
-        top: -22.5rem;
+        top: -17.5rem;
     }
 }
