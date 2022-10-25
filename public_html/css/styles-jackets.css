@@ -157,8 +157,13 @@ table {
     justify-content: flex-start;
     width: 100%;
     margin-left: 6rem;
-    font-weight: 500;
     color: black;
+    font-size: 14px;
+}
+
+#back-text a {
+    color: black;
+    text-decoration: none;
 }
 
 .jackets-container {
@@ -456,5 +461,14 @@ hr {
 
     .footer-container {
         background-color: #071013;
+    }
+
+    .category-button {
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    #back-text {
+        display: none;
     }
 }

@@ -117,12 +117,22 @@ table {
 }
 
 .top-nav {
-    width: 80%;
+    width: 100%;
     margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .top-nav h3 {
     margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+.top-nav h3 a {
+    text-decoration: none;
+    color: black;
 }
 
 .top-nav h2 {
@@ -335,6 +345,27 @@ table {
     width: 200px;
 }
 
+@media screen and (max-width: 1672px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .container-info {
+        min-width: 498px;
+    }
+
+    .container-item {
+        min-width: 480px;
+    }
+
+    .top-nav {
+        align-items: center;
+    }
+}
+
 @media screen and (max-width: 840px) {
 
     .full-navbar {
@@ -360,5 +391,13 @@ table {
 
     .footer-container {
         background-color: #071013;
+    }
+
+    #back {
+        display: none;
+    }
+
+    .top-nav h2 {
+        min-width: 150px;
     }
 }
