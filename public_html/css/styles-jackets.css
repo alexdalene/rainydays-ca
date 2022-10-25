@@ -218,6 +218,12 @@ table {
     display: none;
 }
 
+.overlay figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .overlay:target {
     position: absolute;
     left: 0;
@@ -230,7 +236,8 @@ table {
 }
 
 .overlay figcaption {
-    width: 30rem;
+    max-width: 500px;
+    min-width: 500px;
     height: 40rem;
     position: relative;
     background-color: white;
@@ -247,8 +254,8 @@ table {
   }
 
   .overlay .close::after {
-    right: -1rem;
-    top: -1rem;
+    right: -35rem;
+    top: -22.5rem;
     width: 2rem;
     height: 2rem;
     position: absolute;
@@ -436,6 +443,21 @@ hr {
     width: 200px;
 }
 
+/* @media screen and (max-width: 1420px) {
+    .top-info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .jackets-overlay-size {
+        border: none;
+    }
+
+    .overlay figcaption {
+        min-width: 350px;
+    }
+} */
+
 @media screen and (max-width: 840px) {
 
     .full-navbar {
@@ -470,5 +492,24 @@ hr {
 
     #back-text {
         display: none;
+    }
+
+    .top-info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .jackets-overlay-size {
+        border: none;
+    }
+
+    .overlay figcaption {
+        min-width: 350px;
+        max-width: 350px;
+    }
+
+    .overlay .close::after {
+        right: -26rem;
+        top: -22.5rem;
     }
 }
