@@ -514,4 +514,8 @@ hr {
         right: -24.5rem;
         top: -17.5rem;
     }
+
+    .jackets-overlay-item {
+        margin-bottom: 0.5rem;
+    }
 }
