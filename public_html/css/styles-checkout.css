@@ -229,6 +229,7 @@ table {
     align-items: center;
     justify-content: center;
     gap: 2px;
+    color: black;
 }
 
 .btn-order {
