@@ -334,6 +334,7 @@ table {
     font-weight: 700;
     color: black;
     transition: 150ms ease-in-out;
+    border: 2px solid black;
 }
 
 .jackets-overlay-button:hover{
