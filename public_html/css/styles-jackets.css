@@ -328,13 +328,11 @@ table {
 
 .jackets-overlay-button {
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 2.5rem;
     height: 2.5rem;
     font-size: 16px;
     font-weight: 700;
+    color: black;
     transition: 150ms ease-in-out;
 }
 
