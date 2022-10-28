@@ -1,71 +1,63 @@
 @import url(library/variables.css);
 
 .main-container {
-    /* background-image: url(../images/cover-image.jpg);
-    background-attachment: fixed;
-    background-size: cover; */
-    width: 100%;
-    height: auto;
-    min-height: 100vh;
     display: flex;
-    justify-content: center;
+    max-width: 95%;
+    margin: 0 auto;
 }
 
 .main-container-background {
-    background-color: white;
-    width: 80%;
-    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 5rem 0;
+}
+
+.sticky-info {
+    display: flex;
     flex-direction: column;
-    padding: 5rem 0;
+    align-self: flex-start;
+    gap: 15px;
+    margin-right: 1rem;
+    min-width: 170px;
 }
 
 .category-button {
     display: flex;
-    gap: 18px;
-    width: 100%;
-    margin: 1rem 0;
-    margin-left: 6rem;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .category-button-style {
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 2rem;
-    width: 5rem;
+    width: 100%;
     font-size: 14px;
     border: 1px solid black;
     color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #back-text {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    margin-left: 6rem;
     color: black;
     font-size: 14px;
 }
 
 #back-text a {
     color: black;
-    text-decoration: none;
 }
 
 #breadcrumb {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    margin-left: 6rem;
-    margin-top: 1rem;
     font-size: 16px;
     font-weight: 500;
+}
+
+#break-line {
+    height: 100vh;
+    border: none;
+    border-right: 1px solid #c7c7c7;
+    width: 10px;
+    margin: 0;
 }
 
 .jackets-container {
@@ -74,13 +66,12 @@
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 .jackets-container-item {
     background-color: #EDEDED;
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,13 +99,28 @@
 }
 
 .jackets-info {
-    line-height: 1.5;
+    line-height: 1.2;
     margin-top: 0.5rem;
 }
 
 .jackets-title {
     font-weight: 500;
 }
+
+.more-info {
+    margin-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .radio-color {                   TO DO
+    appearance: none;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+} */
 
 .overlay {
     display: none;
@@ -306,11 +312,24 @@ hr {
     box-shadow: 0px 3px #EB5160;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 703px) {
+
+    .main-container-background {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sticky-info {
+        align-self: center;
+    }
 
     .category-button {
         justify-content: center;
-        margin: 1rem 0;
+        flex-direction: row;
+    }
+
+    #break-line {
+        display: none;
     }
 
     #back-text {
@@ -318,8 +337,7 @@ hr {
     }
 
     #breadcrumb {
-        justify-content: center;
-        margin-left: 0;
+        display: none;
     }
 
     .top-info {
