@@ -81,13 +81,13 @@
         </ul>
       </ul>
     </header>
-
-    <section class="cover-img-container">
-      <img id="logo-simple" src="icons/Rainydays-simplistic.svg" alt="" />
+    <section class="parallax-window cover-img-container flex-center" data-parallax="scroll" data-image-src="images/cover-image.jpg">
+      <img id="logo-simple" src="icons/Rainydays-simplistic.svg" alt=""  />
     </section>
 
-    <main class="main-container">
-      <nav class="buttons-container">
+    <main class="main-container flex-ali-center">
+      <h1>Equip yourself.</h1>
+      <nav class="buttons-container flex-jus-center">
         <button class="button-main-style">
           <a href="jackets.html">JACKETS</a>
         </button>
@@ -96,13 +96,17 @@
         <button class="button-main-style">ACCESSORIES</button>
       </nav>
 
-      <section class="images-main-container">
-        <h1 id="images-header">What's your thing?</h1>
+      <section class="images-main-container flex-ali-center">
+        <section class="header-inspo flex-center">
+          <h3>Looking for a challenge? 
+          </h3>
+        </section>
+        <h2 id="images-header">What's your thing?</h1>
         <div class="images-container">
-          <div class="images-style"><h2>Running</h2></div>
-          <div class="images-style"><h2>Skiing</h2></div>
-          <div class="images-style"><h2>Hiking</h2></div>
-          <div class="images-style"><h2>Camping</h2></div>
+          <div class="images-style flex-center"><h2>Running</h2></div>
+          <div class="images-style flex-center"><h2>Skiing</h2></div>
+          <div class="images-style flex-center"><h2>Hiking</h2></div>
+          <div class="images-style flex-center"><h2>Camping</h2></div>
         </div>
       </section>
     </main>
@@ -129,6 +133,8 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
   </body>
 </html>
