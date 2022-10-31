@@ -1,6 +1,6 @@
 .navbar {
-    background-color: rgba(235, 81, 96, 0.9);
-    backdrop-filter: blur(8px);
+    background-color: rgba(235, 81, 96, 1);
+    /* backdrop-filter: blur(8px); */
     height: 44px;
     position: sticky;
     top: 0;
