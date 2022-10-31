@@ -154,6 +154,12 @@
     background-position: 50% 100%;
 }
 
+@media screen and (max-width: 970px) {
+    .button-main-style {
+        width: calc(100% / 3);
+    }
+}
+
 @media screen and (max-width: 820px) {
     .main-container {
         max-width: 100%;

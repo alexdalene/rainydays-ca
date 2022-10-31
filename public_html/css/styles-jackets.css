@@ -2,27 +2,26 @@
 
 .main-container {
     display: flex;
-    max-width: 95%;
+    max-width: 90%;
     margin: 0 auto;
 }
 
 .main-container-background {
     display: flex;
+    flex-direction: column;
     margin: 5rem 0;
+    gap: 1rem;
 }
 
 .sticky-info {
     display: flex;
-    flex-direction: column;
     align-self: flex-start;
+    flex-direction: column;
     gap: 15px;
-    margin-right: 1rem;
-    min-width: 170px;
 }
 
 .category-button {
     display: flex;
-    flex-direction: column;
     gap: 5px;
 }
 
@@ -63,9 +62,9 @@
 .jackets-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .jackets-container-item {
@@ -75,8 +74,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    transition: 150ms ease-in-out;
 }
 
 .jackets-container-item:hover {
@@ -112,15 +109,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
-
-/* .radio-color {                   TO DO
-    appearance: none;
-    border: 1px solid black;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-} */
 
 .overlay {
     display: none;
@@ -312,13 +302,7 @@ hr {
     box-shadow: 0px 3px #EB5160;
 }
 
-@media screen and (max-width: 703px) {
-
-    .main-container-background {
-        flex-direction: column;
-        gap: 20px;
-    }
-
+@media screen and (max-width: 820px) {
     .sticky-info {
         align-self: center;
     }
@@ -339,6 +323,14 @@ hr {
     #breadcrumb {
         display: none;
     }
+
+    .jackets-container-item {
+        width: 250px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 703px) {
 
     .top-info {
         flex-direction: column;
