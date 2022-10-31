@@ -321,13 +321,9 @@ hr {
     }
 
     #breadcrumb {
-        display: none;
+        text-align: center;
     }
 
-    .jackets-container-item {
-        width: 250px;
-        height: 350px;
-    }
 }
 
 @media screen and (max-width: 703px) {
