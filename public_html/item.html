@@ -14,15 +14,18 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>RAINYDAYS</title>
+    <script
+      src="https://kit.fontawesome.com/210805fa05.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles-item.css" />
+    <title>View item</title>
   </head>
-
   <body>
     <header class="navbar">
       <ul class="full-navbar">
         <li>
-          <a href=""
+          <a href="index.html"
             ><svg
               class="navbar-logo"
               width="100%"
@@ -57,79 +60,93 @@
           <a href=""><span class="material-symbols-outlined">search</span></a>
         </li>
         <li>
-          <a href="checkout.html"
+          <a href=""
             ><span class="material-symbols-outlined">shopping_bag</span></a
           >
         </li>
       </ul>
       <ul class="com-navbar">
         <li>
-          <a href=""><span class="material-symbols-outlined">menu</span></a>
+          <a href="index.html"
+            ><span class="material-symbols-outlined">menu</span></a
+          >
         </li>
         <ul class="com-navbar-icons">
           <li>
             <a href=""><span class="material-symbols-outlined">search</span></a>
           </li>
           <li>
-            <a href="checkout.html"
+            <a href=""
               ><span class="material-symbols-outlined">shopping_bag</span></a
             >
           </li>
         </ul>
       </ul>
     </header>
-    <section class="parallax-window cover-img-container flex-center" data-parallax="scroll" data-image-src="images/cover-image.jpg">
-      <img id="logo-simple" src="icons/Rainydays-simplistic.svg" alt=""  />
-    </section>
 
-    <main class="main-container flex-ali-center">
-      <h1>Equip yourself.</h1>
-      <nav class="buttons-container flex-jus-center">
-        <button class="button-main-style">
-          <a href="jackets.html">JACKETS</a>
-        </button>
-        <button class="button-main-style">PANTS</button>
-        <button class="button-main-style">SHOES</button>
-        <button class="button-main-style">ACCESSORIES</button>
-      </nav>
-
-      <section class="images-main-container flex-ali-center">
-        <section class="header-inspo flex-center">
-          <h3>Looking for a challenge? 
-          </h3>
-        </section>
-        <h2 id="images-header">What's your thing?</h1>
-        <div class="images-container flex-jus-center">
-          <div class="images-style flex-center"><h2>Running</h2></div>
-          <div class="images-style flex-center"><h2>Skiing</h2></div>
-          <div class="images-style flex-center"><h2>Hiking</h2></div>
-          <div class="images-style flex-center"><h2>Camping</h2></div>
-        </div>
+    <main class="container">
+      <section class="breadcrumb">
+        <a href="index.html">Home</a>
+        /
+        <a href="jackets.html">Jackets</a>
+        /
+        <a href="#">View item</a>
       </section>
-    </main>
 
+      <section class="container-jacket flex-jus-center">
+        <article class="container-jacket-item flex-center">
+          <section class="jacket-img flex-jus-center">
+            <img src="images/jackets/jacket-1.png" alt="" />
+          </section>
+          <section class="jacket-img flex-jus-center" id="full-img">
+            <img src="images/jackets/jacket-1-hero.png" alt=""/>
+          </section>
+          </footer>
+        </article>
+        <aside class="item-info">
+          <footer class="jacket-footer">
+            <h2>RAINYDAYS</h2>
+            <h3>Jacket - Mountain Range</h3>
+            <p class="item-price">€50.99</p>
+          </footer>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
+            aspernatur enim vitae, harum maiores veniam, animi eaque tempora
+            delectus non ad ipsa ipsum ut odit.
+          </p>
+          <section class="size-btn">
+            <button class="btn-style">S</button>
+            <button class="btn-style">M</button>
+            <button class="btn-style">L</button>
+            <button class="btn-style">XL</button>
+          </section>
+          <button class="cart-btn"><a href="checkout.html">Add to cart</a></button>
+        </aside>
+    </main>
+    
     <footer class="footer-container">
-      <div class="footer-container-info">
-        <img
-          id="footer-logo"
-          class="footer-info"
-          src="icons/Rainydays.svg"
-          alt=""
-        />
-        <div class="footer-info">
-          <ul class="footer-info-list">
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Location</a></li>
-          </ul>
-          <ul class="footer-info-list">
-            <li><a href="">Legal</a></li>
-            <li><a href="">Our brand</a></li>
-            <li><a href="">Payment</a></li>
-          </ul>
+        <div class="footer-container-info">
+          <img
+            id="footer-logo"
+            class="footer-info"
+            src="icons/Rainydays.svg"
+            alt=""
+          />
+          <div class="footer-info">
+            <ul class="footer-info-list">
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Location</a></li>
+            </ul>
+            <ul class="footer-info-list">
+              <li><a href="">Legal</a></li>
+              <li><a href="">Our brand</a></li>
+              <li><a href="">Payment</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>

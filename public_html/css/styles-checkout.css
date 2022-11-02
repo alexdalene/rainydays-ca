@@ -1,4 +1,9 @@
+/* Import CSS */
+
 @import url(library/variables.css);
+@import url(library/reset.css);
+@import url(library/navbar.css);
+@import url(library/footer.css);
 
 .container-main {
     display: flex;
