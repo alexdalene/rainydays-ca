@@ -55,6 +55,7 @@
     box-sizing: border-box;
     padding: 0.5rem;
     transition: 150ms ease;
+    color: black;
 }
 
 .btn-style:hover {
@@ -210,4 +211,11 @@
     outline: 1px solid black;
     outline-offset: 3px;
     border-radius: 50%;
+}
+
+
+@media screen and (max-width: 820px) {
+    .container-btn-left {
+        gap: 0;
+    }
 }
