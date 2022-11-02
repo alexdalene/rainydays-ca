@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pay and order selected item" />
+    <link rel="icon" type="image/x-icon" href="icons/Rainydays-mountain.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +16,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <script
+      src="https://kit.fontawesome.com/210805fa05.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/styles-checkout.css" />
     <title>Checkout</title>
   </head>
@@ -80,86 +85,78 @@
         </ul>
       </ul>
     </header>
-    <main class="container-main">
-      <nav class="top-nav">
-        <h3 id="back"><a href="jackets.html">Back</a></h3>
-        <h2>Home / Checkout</h2>
-      </nav>
-      <section class="container">
-        <section class="container-item">
-          <div class="jacket">
-            <div class="color-name">
-              <div class="test">
-                <img
-                  class="jacket-img"
-                  src="images/jackets/jacket-1.png"
-                  alt=""
-                />
-                <div>
-                  <svg
-                    viewbox="0 0 25 25"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20px"
-                    height="20px"
-                    xml-space="preserve"
-                  >
-                    <circle
-                      cx="50%"
-                      cy="50%"
-                      r="10"
-                      fill="#ededed"
-                      stroke="black"
-                    />
-                    <circle cx="50%" cy="50%" r="7" fill="orange" />
-                  </svg>
-                  <h2>Jacket - Mountain Range</h2>
+    <main class="container-main flex-center">
+      <section class="main-section">
+        <section class="breadcrumb">
+          <a href="index.html">Home</a>
+          /
+          <a href="#">Checkout</a>
+        </section>
+        <section class="section-item">
+          <section class="container-item flex-jus-center">
+            <div class="jacket flex-ali-center">
+              <div class="color-name flex-jus-center">
+                <div class="test flex-ali-center">
+                  <img
+                    class="jacket-img"
+                    src="images/jackets/jacket-1.png"
+                    alt=""
+                  />
+                  <div>
+                    <h2>Jacket - Mountain Range</h2>
+                    <p>Color: <i class="fas fa-circle jack-1-1"></i></p>
+                  </div>
                 </div>
               </div>
+              <button id="size">L</button>
+              <h2>€50.99</h2>
             </div>
-            <button id="size">L</button>
-            <h2>€50.99</h2>
-          </div>
-          <div class="buttons">
-            <div>
-              <button class="category-button-style">
-                Size
-                <span class="material-symbols-outlined">arrow_drop_down</span>
+            <div class="buttons">
+              <div>
+                <button class="category-button-style flex-center">
+                  Size
+                  <span class="material-symbols-outlined">arrow_drop_down</span>
+                </button>
+                <button class="category-button-style flex-center">
+                  Color
+                  <span class="material-symbols-outlined">arrow_drop_down</span>
+                </button>
+              </div>
+              <button class="category-button-style flex-center">
+                Remove
+                <span class="material-symbols-outlined">close</span>
               </button>
-              <button class="category-button-style">
-                Color
-                <span class="material-symbols-outlined">arrow_drop_down</span>
-              </button>
             </div>
-            <button class="category-button-style">
-              Remove
-              <span class="material-symbols-outlined">close</span>
-            </button>
-          </div>
-        </section>
-        <section class="container-info">
-          <section class="info">
-            <div class="online-pickup">
-              <button autofocus class="btn-order">Online order</button>
-              <button class="btn-order">Pickup order</button>
-            </div>
-            <hr />
-            <h2>Total sum</h2>
-            <div class="small-info">
-              <p>Jacket - Mountain Range</p>
-              <p>€50.99</p>
-            </div>
-            <div class="small-info">
-              <p>Shipping</p>
-              <p>€8</p>
-            </div>
-            <hr />
-            <div class="small-info">
-              <p class="total">Total</p>
-              <p class="total">€58.99</p>
-            </div>
-            <p id="discount">Add/remove discount code</p>
           </section>
-          <button id="buy">BUY NOW</button>
+          <section class="container-info">
+            <section class="info flex-center">
+              <div class="online-pickup flex-center">
+                <input type="radio" name="order" id="online" checked />
+                <label for="online" class="btn-order">Shipping</label>
+                <input type="radio" name="order" id="pickup" />
+                <label for="pickup" class="btn-order">Pickup</label>
+                <!-- <button class="btn-order">Online order</button>
+              <button class="btn-order">Pickup order</button> -->
+              </div>
+              <hr />
+              <h2>Total sum</h2>
+              <div class="small-info">
+                <p>Jacket - Mountain Range</p>
+                <p>€50.99</p>
+              </div>
+              <div class="small-info">
+                <p>Shipping</p>
+                <p>€8</p>
+              </div>
+              <hr />
+              <div class="small-info">
+                <p class="total">Total</p>
+                <p class="total">€58.99</p>
+              </div>
+              <p id="discount">Add/remove discount code</p>
+            </section>
+            <button id="buy">BUY NOW</button>
+          </section>
         </section>
       </section>
     </main>
