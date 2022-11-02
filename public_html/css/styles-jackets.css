@@ -201,3 +201,13 @@
 }
 
 /* The end. */
+
+.fa-circle {
+    transition: 150ms ease;
+}
+
+.fa-circle:hover {
+    outline: 1px solid black;
+    outline-offset: 3px;
+    border-radius: 50%;
+}
