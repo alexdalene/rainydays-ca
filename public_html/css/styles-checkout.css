@@ -181,18 +181,31 @@
 
 /* Buy button */
 
-#buy {
-    background-color: #00A676;
+.buy-btn {
     border: none;
-    color: white;
     font-size: 18px;
     font-weight: 600;
     width: 100%;
     height: 40px;
     margin-top: 1rem;
-
+    background-color: #00A676;
+    color: white;
 }
 
-#buy:hover {
+.buy-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.buy-btn:hover {
     background-color: #007856;
+}
+
+#visa-end {
+    font-size: 12px;
+    display: inline;
+}
+
+#visa-end .fa-circle {
+    font-size: 6px;
 }
