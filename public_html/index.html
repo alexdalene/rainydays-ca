@@ -24,7 +24,7 @@
     <header class="navbar">
       <ul class="full-navbar">
         <li>
-          <a href=""
+          <a href="#"
             ><svg
               class="navbar-logo"
               width="100%"
@@ -66,7 +66,9 @@
       </ul>
       <ul class="com-navbar">
         <li>
-          <a href=""><span class="material-symbols-outlined">menu</span></a>
+          <button class="burger-menu">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
         </li>
         <ul class="com-navbar-icons">
           <li>
@@ -80,6 +82,12 @@
         </ul>
       </ul>
     </header>
+    <div class="menu">
+      <ul class="menu-list flex-center">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
 
     <!-- cover-image.jpg is 1.8 MB - Needed because image is used to cover whole page -->
 
@@ -138,6 +146,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/toggle.js"></script>
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
