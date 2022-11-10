@@ -97,6 +97,7 @@
     position: sticky;
     top: 0;
     overflow-y: hidden;
+    z-index: 3;
 }
 
 /* Media Queries */
