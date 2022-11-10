@@ -96,7 +96,10 @@
     background-color: rgba(235, 81, 96, 1);
     position: sticky;
     top: 0;
+    overflow-y: hidden;
 }
+
+/* Media Queries */
 
 @media screen and (max-width: 820px) {
 
